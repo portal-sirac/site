@@ -52,12 +52,16 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><!--<img src="img/logo.png" alt="" title="" />SiRAC--></a>
+				        <a href="index.html">
+				        	<h1 style="color: white">
+								SiRAC			
+							</h1>
+						</a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="index.html">Inicio</a></li>
-				          <li class="menu-has-children"><a href="">Institucional</a>
+				          <li class="menu-has-children"><a href="javascript:void(0)">Institucional</a>
 				            <ul>
 				              <li><a href="about-visao.html">Visão</a></li>
 				              <li><a href="about-missao.html">Missão</a></li>
@@ -85,9 +89,6 @@
 				<div class="container">
 					<div class="row fullscreen d-flex justify-content-center align-items-center">
 						<div class="banner-content col-lg-9 col-md-12 justify-content-center ">
-							<h1>
-								SiRAC			
-							</h1>
 							<p class="text-white mx-auto">
 								Armazenará água das chuvas em cisternas, distribuindo nos diversos pontos da residência com controle de ARMAZENAMENTO, GASTOS e ECONÔMIA através de um aplicativo mobile.
 							</p>
@@ -603,11 +604,11 @@
 								<h6>Newsletters</h6>
 								<p>Fique por dento de nossas Atualizações</p>
 								<div class="" id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-										<input class="form-control" name="EMAIL" placeholder="Seu E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu E-mail'" required="" type="email">
-			                            	<button class="click-btn btn btn-default"><i class="lnr lnr-arrow-right" aria-hidden="true"></i></button>
+									<form class="form-inline" id="newsletters_emails_form">
+										<input class="form-control" name="EMAIL" placeholder="Seu E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu E-mail'" required="true" type="email">
+			                            	<button type="submit" class="click-btn btn btn-default"><i class="lnr lnr-arrow-right" aria-hidden="true"></i></button>
 			                            	<div style="position: absolute; left: -5000px;">
-												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+												<input name="email" tabindex="-1" value="" type="text">
 											</div>
 										<div class="info"></div>
 									</form>
@@ -642,6 +643,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+			<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
   			<script src="js/easing.min.js"></script>			
 			<script src="js/hoverIntent.js"></script>
 			<script src="js/superfish.min.js"></script>	
@@ -651,5 +653,15 @@
 			<script src="js/jquery.nice-select.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>	
+
+			<!-- Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119400005-1"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-119400005-1');
+			</script>
 		</body>
 	</html>
